@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="10sp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="match_parent"
+            android:id="@+id/card_img"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mathematic 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/clause"
+            android:layout_toEndOf="@id/card_img"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publisher"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_toEndOf="@id/card_img"
+            android:layout_below="@id/clause"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="5sp"
+            android:id="@+id/publisher"/>
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_toEndOf="@id/card_img"
+            android:id="@+id/star"
+            android:layout_below="@id/publisher"
+            android:layout_marginTop="25sp"
+            android:src="@drawable/star"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.0"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/star"
+            android:layout_below="@+id/publisher"
+            android:layout_marginStart="5sp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30sp"/>
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
